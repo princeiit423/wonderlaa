@@ -73,17 +73,9 @@ const sessionOptions = {
   },
 };
 
-app.get("/", async (req, res,next) => {
-  try {
-    res.locals.currUser=req.user;
-    
-  const allListings = await Listing.find({});
-  res.render("listings/index.ejs", { allListings });
-  } catch (err) {
-    next(err);
-  }
+app.get("/", (req, res) => {
+res.sendFile("C:\\apna-project\\views\\home\\index.html");
 });
-
 
 
 app.use((req, res, next) => {
