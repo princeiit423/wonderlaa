@@ -74,7 +74,7 @@ const sessionOptions = {
 };
 
 app.get("/", (req, res) => {
-res.render("home/home.ejs");
+res.render("home/index.ejs");
 });
 app.use((req, res, next) => {
   res.locals.currUser = req.user
