@@ -1,0 +1,82 @@
+[
+  {
+      "title": "Serene Lake House",
+      "description": "A beautiful house by the lake with stunning views.",
+      "image": "https://example.com/lake-house.jpg",
+      "price": 250000,
+      "state": "Ontario",
+      "country": "Canada"
+  },
+  {
+      "title": "Urban Apartment",
+      "description": "Modern apartment in the heart of the city.",
+      "image": "https://example.com/urban-apartment.jpg",
+      "price": 500000,
+      "state": "California",
+      "country": "USA"
+  },
+  {
+      "title": "Cozy Cottage",
+      "description": "A charming cottage in the countryside.",
+      "image": "",
+      "price": 150000,
+      "state": "Devon",
+      "country": "UK"
+  },
+  {
+      "title": "Mountain Retreat",
+      "description": "A peaceful retreat in the mountains.",
+      "image": "https://example.com/mountain-retreat.jpg",
+      "price": 300000,
+      "state": "Colorado",
+      "country": "USA"
+  },
+  {
+      "title": "Beachfront Villa",
+      "description": "Luxurious villa with direct beach access.",
+      "image": "https://example.com/beachfront-villa.jpg",
+      "price": 750000,
+      "state": "Queensland",
+      "country": "Australia"
+  },
+  {
+      "title": "Historic Townhouse",
+      "description": "Beautiful townhouse with a rich history.",
+      "image": "",
+      "price": 400000,
+      "state": "Massachusetts",
+      "country": "USA"
+  },
+  {
+      "title": "Modern Loft",
+      "description": "Stylish loft in a trendy neighborhood.",
+      "image": "https://example.com/modern-loft.jpg",
+      "price": 350000,
+      "state": "New York",
+      "country": "USA"
+  },
+  {
+      "title": "Rural Farmhouse",
+      "description": "Spacious farmhouse with lots of land.",
+      "image": "",
+      "price": 200000,
+      "state": "Texas",
+      "country": "USA"
+  },
+  {
+      "title": "Luxury Penthouse",
+      "description": "Exclusive penthouse with stunning city views.",
+      "image": "https://example.com/luxury-penthouse.jpg",
+      "price": 1000000,
+      "state": "Dubai",
+      "country": "UAE"
+  },
+  {
+      "title": "Secluded Cabin",
+      "description": "A cozy cabin in the woods, perfect for a getaway.",
+      "image": "https://example.com/secluded-cabin.jpg",
+      "price": 180000,
+      "state": "British Columbia",
+      "country": "Canada"
+  }
+]

@@ -1,0 +1,48 @@
+<% layout("layout/boilerplate") %>
+
+<body>
+    <h3>Add new Listing</h3>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <form method="POST" action="/listings" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="title" type="text" placeholder="Enter title" class="form-control" required>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" type="text" placeholder="Enter description" class="form-control" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input name="image" type="file" placeholder="Upload Image" class="form-control" required>
+        </div>
+
+        <div class="mb-3 ">
+            <label for="price" class="form-label">Price</label>
+            <input name="price" type="number" placeholder="Enter price" class="form-control" required>
+        </div>
+
+
+        <div class="row">
+        <div class="mb-3 col-6 ">
+            <label for="state" class="form-label">State</label>
+            <input name="state" type="text" placeholder="Enter state" class="form-control"required>
+        </div>
+
+        <div class="mb-3 col-6">
+            <label for="country" class="form-label">Country</label>
+            <input name="country" type="text" placeholder="Enter country" class="form-control" required>
+        </div>
+    </div>
+        <br/>
+        <button class="btn btn-dark">ADD</button>
+    </form>
+</div>
+</div>
+</body>
+
+</html>

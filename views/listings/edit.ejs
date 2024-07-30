@@ -1,0 +1,44 @@
+<% layout("layout/boilerplate") %>
+
+<body>
+    <form method="POST" action="/listings/<%=listing._id %>?_method=PUT" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input name="title" type="text" value="<%=listing.title %>" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" type="text" value="<%= listing.description %>" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <i>Preview listing image</i>
+            <br>
+            <img style="height: 7rem; width: 9rem;"  src="<%=listing.image.url %>" alt="">
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input name="image" type="file" value="<%=listing.image.url %>" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="price" type="number" value="<%=listing.price %>" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="state" class="form-label">State</label>
+            <input name="state" type="text" value="<%=listing.state %>" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input name="country" type="text" value="<%=listing.country %>" class="form-control">
+        </div>
+
+        <button class="btn btn-dark">EDIT</button>
+    </form>
+</body>
+
+</html>
