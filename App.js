@@ -74,7 +74,7 @@ const sessionOptions = {
 };
 
 app.get("/", (req, res) => {
-res.sendFile("C:\\apna-project\\views\\home\\index.html");
+res.render("home/index.ejs");
 });
 
 
