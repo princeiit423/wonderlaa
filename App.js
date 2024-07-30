@@ -73,9 +73,19 @@ const sessionOptions = {
   },
 };
 
-app.get("/", (req, res) => {
-res.render("home/index.ejs");
+app.get("/", async (req, res,next) => {
+  try {
+    res.locals.currUser=req.user;
+    
+  const allListings = await Listing.find({});
+  res.render("listings/index.ejs", { allListings });
+  } catch (err) {
+    next(err);
+  }
 });
+
+
+
 app.use((req, res, next) => {
   res.locals.currUser = req.user
   next()
@@ -294,9 +304,9 @@ app.delete("/listings/:id/reviews/:reviewId", isLoggedIn, async (req, res) => {
 
 //show error route always put below
 
-app.use((err, req, res, next) => {
-  res.render("error_page/err.ejs");
-});
+//app.use((err, req, res, next) => {
+//  res.render("error_page/err.ejs");
+//});
 
 app.listen(port, (req, res) => {
   console.log(`server running on port: ${port} `);
