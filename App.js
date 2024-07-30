@@ -73,9 +73,9 @@ const sessionOptions = {
   },
 };
 
-//app.get("/", (req, res) => {
-//  res.send("server is running");
-//});
+app.get("/", (req, res) => {
+res.render("home/home.ejs");
+});
 app.use((req, res, next) => {
   res.locals.currUser = req.user
   next()
