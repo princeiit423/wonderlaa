@@ -41,25 +41,31 @@ wonderla/ ├── models/ # Mongoose models
 
 ## ⚙️ Installation
 
-1. **Clone the repository**
+1. **Clone the repository:**
 git clone https://github.com/your-username/wonderla.git
 cd wonderlaa
 
-2. **Install dependencies**
+2. **Install dependencies:**
 npm install
 
-3. **Set up environment variables**
+3. **Set up environment variables:**
 DATABASE_URL=your_mongo_db_connection
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 SECRET=session_secret
 
-4.**Run the application**
+4.**Run the application:**
 npx nodemon app.js or start app.js
 
 ----------------------------------------------------------
+📸 Screenshots
 
+![WonderLust - Google Chrome 25-04-2025 19_50_39](https://github.com/user-attachments/assets/8ee568d4-58d9-4ad1-91c0-e295107faaa0)
+![WonderLust - Google Chrome 25-04-2025 19_50_25](https://github.com/user-attachments/assets/4879678c-dcc9-4329-a791-6480ae9c1e45)
+![WonderLust - Google Chrome 25-04-2025 19_49_54](https://github.com/user-attachments/assets/aa0f83df-71b5-48e8-9a78-abc6352d05ac)
+
+-----------------------------------------------------------
 ##🚀 Deployment
 You can deploy Wonderla on:
 
